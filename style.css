@@ -23,12 +23,19 @@ body {
   margin: 0px;
 }
 
+::selection {
+  background-color: lightskyblue;
+}
 /* Specific Syling */
 
 .header {
   padding: 48px 18px;
   text-align: center;
   background-color: rgb(216, 216, 216);
+}
+
+.profession::after {
+  content: " 🕵️‍♂️";
 }
 
 nav-link {
