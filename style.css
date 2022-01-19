@@ -1,9 +1,13 @@
-* {
+/* General Styling */
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 * {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -19,14 +23,42 @@ body {
   margin: 0px;
 }
 
+/* Specific Syling */
+
 .header {
-  padding: 28px 16px;
+  padding: 48px 18px;
   text-align: center;
   background-color: rgb(216, 216, 216);
 }
 
+nav-link {
+  padding: 4px 8px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: rgb(146, 145, 145);
+}
+
+.nav-link + .nav-link {
+  margin-left: 20px;
+}
+
 .main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 46px;
+  padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 48px;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > :first-child {
+  border-top: none;
 }
