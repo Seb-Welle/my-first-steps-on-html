@@ -48,9 +48,9 @@ nav-link {
   background-color: rgb(146, 145, 145);
 }
 
-.nav-link:hover {
-  color: black;
-  background-color: lightgray;
+.nav-link:active {
+  color: grey;
+  background-color: white;
 }
 
 .nav-link + .nav-link {
@@ -71,6 +71,6 @@ nav-link {
   border-top: 2px solid grey;
 }
 
-.main > :first-child {
+.main > *:first-child {
   border-top: none;
 }
