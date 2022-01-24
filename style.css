@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-* {
+html {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -29,9 +30,22 @@ body {
 /* Specific Syling */
 
 .header {
-  padding: 48px 18px;
+  padding: 3rem 1rem;
+  padding-top: 4rem;
   text-align: center;
   background-color: rgb(216, 216, 216);
+  position: relative;
+}
+
+.heading-group {
+  font-size: 3rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+.profession {
+  font-size: 1rem;
 }
 
 .profession::after {
@@ -41,15 +55,15 @@ body {
 .hire-me {
   position: absolute;
   background-color: rgb(231, 182, 209);
-  right: 10px;
-  top: 10px;
-  padding: 6px;
-  border-radius: 4px;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
   color: black;
 }
 
 nav-link {
-  padding: 4px 8px;
+  padding: 0.3rem 0.5rem;
   color: black;
 }
 
@@ -64,21 +78,22 @@ nav-link {
 }
 
 .nav-link + .nav-link {
-  margin-left: 20px;
+  margin-left: 1.2rem;
 }
 
 .main {
-  max-width: 900px;
+  max-width: 80ch;
   margin: 0 auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .main > * + * {
-  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 .main > * {
-  border-top: 2px solid grey;
+  border-top: 0.125rem solid grey;
+  padding: 0 1rem;
 }
 
 .main > *:first-child {
@@ -86,7 +101,7 @@ nav-link {
 }
 .article-heading {
   position: relative;
-  left: -14px;
+  left: -1rem;
 }
 
 .experience-heading {
