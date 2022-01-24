@@ -38,6 +38,16 @@ body {
   content: " 🕵️‍♂️";
 }
 
+.hire-me {
+  position: absolute;
+  background-color: rgb(231, 182, 209);
+  right: 10px;
+  top: 10px;
+  padding: 6px;
+  border-radius: 4px;
+  color: black;
+}
+
 nav-link {
   padding: 4px 8px;
   color: black;
@@ -73,6 +83,10 @@ nav-link {
 
 .main > *:first-child {
   border-top: none;
+}
+.article-heading {
+  position: relative;
+  left: -14px;
 }
 
 .experience-heading {
