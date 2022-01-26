@@ -45,7 +45,8 @@ body {
   padding: 3rem 1rem;
   padding-top: 4rem;
   text-align: center;
-  background-color: rgb(216, 216, 216);
+  _background-color: rgb(216, 216, 216); /*grey background */
+  background-image: linear-gradient(to right, lightskyblue, white);
   position: relative;
 }
 
@@ -166,4 +167,16 @@ nav-link {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.main-footer {
+  background-image: linear-gradient(to right, lightskyblue, white);
+  padding: 3rem 1rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.footer-link {
+  text-underline-offset: auto;
+  color: black;
 }
