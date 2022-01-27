@@ -33,11 +33,21 @@ h6 {
 }
 
 body {
+  --background-color: white;
+  --accent-color: lightskyblue;
+  --text-color: black;
+  --background-color-hire-me: rgb(231, 182, 209);
+  --background-hover: rgb(146, 145, 145);
+  --text-color-link-active: grey;
+  --border-color: grey;
+
   margin: 0px;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ::selection {
-  background-color: lightskyblue;
+  background-color: var(--accent-color);
 }
 /* Specific Syling */
 
@@ -46,7 +56,13 @@ body {
   padding-top: 4rem;
   text-align: center;
   _background-color: rgb(216, 216, 216); /*grey background */
-  background-image: linear-gradient(to right, lightskyblue, white);
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--background-color)
+  );
+
+  /*linear-gradient(to right, lightskyblue, white); */
   position: relative;
 }
 
@@ -67,12 +83,12 @@ body {
 
 .hire-me {
   position: absolute;
-  background-color: rgb(231, 182, 209);
+  background-color: var(--background-color-hire-me);
   right: 1rem;
   top: 1rem;
   padding: 0.6rem;
   border-radius: 0.5rem;
-  color: black;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -106,17 +122,17 @@ body {
 
 nav-link {
   padding: 0.3rem 0.5rem;
-  color: black;
+  color: var(--text-color);
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: rgb(146, 145, 145);
+  color: var(--text-color);
+  background-color: var(--background-hover);
 }
 
 .nav-link:active {
-  color: grey;
-  background-color: white;
+  color: var(--text-color-link-active);
+  background-color: var(--background-color);
 }
 
 .nav-link + .nav-link {
@@ -140,7 +156,7 @@ nav-link {
 }
 
 .main > * {
-  border-top: 0.125rem solid grey;
+  border-top: 0.125rem solid var(--border-color);
   padding: 0 1rem;
 }
 
@@ -170,7 +186,11 @@ nav-link {
 }
 
 .main-footer {
-  background-image: linear-gradient(to right, lightskyblue, white);
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--background-color)
+  );
   padding: 3rem 1rem;
   padding-top: 4rem;
   text-align: center;
@@ -178,5 +198,5 @@ nav-link {
 
 .footer-link {
   text-underline-offset: auto;
-  color: black;
+  color: var(--text-color);
 }
