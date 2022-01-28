@@ -37,7 +37,7 @@ body {
   --accent-color: lightskyblue;
   --text-color: black;
   --background-color-hire-me: rgb(231, 182, 209);
-  --background-hover: rgb(146, 145, 145);
+  --background-hover: white;
   --text-color-link-active: grey;
   --border-color: grey;
 
@@ -120,9 +120,10 @@ body {
   }
 }
 
-nav-link {
+.nav-link {
   padding: 0.3rem 0.5rem;
   color: var(--text-color);
+  transition: background-color 0.3s linear;
 }
 
 .nav-link:hover {
@@ -133,6 +134,16 @@ nav-link {
 .nav-link:active {
   color: var(--text-color-link-active);
   background-color: var(--background-color);
+}
+
+.nav-link:visited {
+  color: var(--text-color);
+}
+
+.nav-link:focus {
+  background-color: var(--accent-color);
+  outline-color: var(--text-color-link-active);
+  outline-style: dotted;
 }
 
 .nav-link + .nav-link {
@@ -156,7 +167,7 @@ nav-link {
 }
 
 .main > * {
-  border-top: 0.125rem solid var(--border-color);
+  border-top: 0.2rem solid var(--accent-color);
   padding: 0 1rem;
 }
 
